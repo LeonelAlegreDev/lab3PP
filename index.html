@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP - Personas, Empleados, Clientes</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- LOGIC -->
+    <script type="module" src="./assets/js/app.js"></script>
+</head>
+<body>
+    <div id="main_container">
+        <h1>Practica Primer Parcial <br>
+            Personas, Empleados, Clientes</h1>
+        
+        <h2>Form Datos</h2>
+
+        <!-- FILTROS -->
+        <div id="controls_container">
+            <div class="row">
+                <label for="filtro_entidad">Filtrar Por: </label>
+                <select name="filtro_entidad" id="filtro_entidad">
+                    <option value="Cliente">Clientes</option>
+                    <option value="Empleado">Empleados</option>
+                </select>
+            </div>
+            
+            <div class="row">
+                <label for="txb_promedio">Calcular Edad Promedio: </label>
+                <input type="text" id="txb_promedio">
+                <button id="calcular_promedio">Calcular Promedio</button>
+            </div>
+
+            <div class="row">
+                <span>Mostrar Columnas: </span>
+                <label for="filtro_id">ID</label>
+                <input type="checkbox" id="filtro_id">
+                <label for="filtro_nombre">Nombre</label>
+                <input type="checkbox" id="filtro_nombre">
+                <label for="filtro_apellido">Apellido</label>
+                <input type="checkbox" id="filtro_apellido">
+                <label for="filtro_edad">Edad</label>
+                <input type="checkbox" id="filtro_edad">
+                <label for="">Generico</label>
+                <input type="checkbox">
+                <label for="">Generico</label>
+                <input type="checkbox">
+            </div>
+        </div>
+
+        <!-- TABLA DATOS -->
+        <table id="tabla_datos">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
